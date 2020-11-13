@@ -1,8 +1,32 @@
 from flask import Flask,render_template,redirect,url_for,request,session,g
 import sqlite3
 import time
+import json
 from datetime import datetime
 app = Flask(__name__)
+
+#Rule2:  Alert user if the last 5 or more payments exceeds 20k in less than 5min.
+def rule2(user_id):
+    conn = sqlite3.connect('database.db')
+    cur = conn.cursor()
+    sel=cur.execute("Select ts, properties from events where user_id={}  and  noun='bill' and verb=='pay'".format(user_id))
+    sel_data = cur.fetchall(); 
+    conn.close()
+    now=datetime.now()
+    ts = datetime.timestamp(now)
+    amount_paid=0
+    for data in sel_data:
+        if float(data[0])>=float(ts)-300:
+            value=(data[1])
+            value=value.replace("\'","\"")
+            value=json.loads(value)
+            amount_paid=amount_paid+int(value['value'])         
+        else:
+            print(False)
+    print(amount_paid)
+    if amount_paid>=20000:
+        print('Notification')
+    return True
 
 #Rule1:  Trigger a push notification on very first bill pay event for the user
 def rule1(user_id):
@@ -12,9 +36,23 @@ def rule1(user_id):
     sel_data = cur.fetchall(); 
     if len(sel_data)==1:
         print('Notification')
+    else:
+        rule2(user_id)
     conn.close()
     return True
 
+
+
+#Rule3:  Trigger a push notification on very first bill pay event for the user
+def rule3(user_id):
+    conn = sqlite3.connect('database.db')
+    cur = conn.cursor()
+    sel=cur.execute("Select * from events where user_id={}  and  noun='bill' and verb=='pay'".format(user_id))
+    sel_data = cur.fetchall(); 
+    if len(sel_data)==1:
+        print('Notification')
+    conn.close()
+    return True
 
 @app.route('/login',methods=['GET', 'POST'])
 def login():
@@ -57,6 +95,7 @@ def payment():
             ins=conn.execute(ins_statment)
             conn.commit()
             conn.close()
+            rule1(session['user_id'])
 
             return redirect(url_for('events'))
 
