@@ -123,3 +123,20 @@
 2020-11-15 13:14:37,984 127.0.0.1 - - [15/Nov/2020 13:14:37] "GET /feedback HTTP/1.1" 200 -
 2020-11-15 13:14:41,782 127.0.0.1 - - [15/Nov/2020 13:14:41] "POST /feedback HTTP/1.1" 302 -
 2020-11-15 13:14:41,804 127.0.0.1 - - [15/Nov/2020 13:14:41] "GET / HTTP/1.1" 200 -
+2020-11-15 13:17:44,524  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:17:44,564  * Restarting with stat
+2020-11-15 13:17:46,237 Starting the application
+2020-11-15 13:17:46,292  * Debugger is active!
+2020-11-15 13:17:46,304  * Debugger PIN: 322-571-730
+2020-11-15 13:20:09,811  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:20:09,851  * Restarting with stat
+2020-11-15 13:20:11,107 Starting the application
+2020-11-15 13:20:11,139  * Debugger is active!
+2020-11-15 13:20:11,158  * Debugger PIN: 322-571-730
+2020-11-15 13:20:33,542  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:20:33,576  * Restarting with stat
+2020-11-15 13:20:33,921 Starting the application
+2020-11-15 13:20:33,928  * Debugger is active!
+2020-11-15 13:20:33,935  * Debugger PIN: 322-571-730
+2020-11-15 13:20:34,949  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:20:34,995  * Restarting with stat
