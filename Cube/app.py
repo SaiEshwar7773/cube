@@ -2,6 +2,8 @@ from flask import Flask,render_template,redirect,url_for,request,session,g
 import sqlite3
 import time
 import json
+import logging 
+
 from datetime import datetime
 app = Flask(__name__)
 
@@ -59,6 +61,7 @@ def login():
     error = None
     if request.method == 'POST':
         if request.form['username'] == 'admin' or request.form['password'] == 'admin':
+            logger.info("Admin login successful!!!") 
             session['user_id'] = 2
             session['username'] = 'admin'
             return redirect(url_for('admin'))
@@ -102,15 +105,45 @@ def payment():
         return render_template('payment.html')
 
 
+@app.route('/feedback',methods=['GET', 'POST'])
+def feedback():
+        if request.method=="POST":
+            user_id=session['user_id']
+            now=datetime.now()
+            ts = datetime.timestamp(now)
+            ts=str(ts)
+            noun='app'
+            verb='feedback'
+            location= request.remote_addr
+            start_time=int(session['start_time'])
+            timespent=int(time.time())-start_time
+            properties={}
+            properties['navigation']=request.form['navigation']
+            properties['usability']=request.form['usability']
+            properties=str(properties)
+            ins_statment='INSERT INTO events (user_id,ts,noun,verb,location,timespent,properties) VALUES ({},"{}","{}","{}","{}",{},"{}")'.format(user_id,ts,noun,verb,location,timespent,properties)
+            print(ins_statment)
+            conn = sqlite3.connect('database.db')
+            ins=conn.execute(ins_statment)
+            conn.commit()
+            conn.close()
+            rule1(session['user_id'])
+
+            return redirect(url_for('events'))
+
+        return render_template('feedback.html')
+
 @app.route('/',methods=['GET', 'POST'])
 def events():
     if request.method=="POST":
         if request.form['event'] == 'pay':
             session['start_time']=time.time()
             return redirect(url_for('payment'))
+        elif request.form['event'] == 'feedback':
+            session['start_time']=time.time()
+            return redirect(url_for('feedback'))
         return render_template('events.html')
-
-
+        
     return render_template('events.html')
 
 
@@ -119,6 +152,10 @@ def admin():
     return render_template('operator.html')
 
 if __name__ == '__main__':
+    logging.basicConfig(filename="cube_app.log", format='%(asctime)s %(message)s', filemode='a') 
+    logger=logging.getLogger() 
+    logger.setLevel(logging.DEBUG) 
+    logger.info("Starting the application") 
     app.debug = True
     app.secret_key = 'abcdefgh'
     app.run(host='0.0.0.0')

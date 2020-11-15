@@ -25,16 +25,11 @@ cur = conn.cursor()
 
 
 sel=cur.execute("Select ts, properties from events where user_id=1  and  noun='bill' and verb=='pay'")
+sel=cur.execute("select * from events")
 sel_data = cur.fetchall(); 
 print(len(sel_data))
 for s in sel_data:
-    try:
-        value=(s[1])
-        value=value.replace("\'","\"")
-        value=json.loads(value)
-        print(value['Value'])
-    except Exception as e:
-        print(e)
+    print(s)
 conn.close()
 
 

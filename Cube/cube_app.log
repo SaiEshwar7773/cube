@@ -1,0 +1,125 @@
+2020-11-15 12:35:18,889 Starting the application
+2020-11-15 12:35:18,920  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-11-15 12:35:18,923  * Restarting with stat
+2020-11-15 12:35:19,348 Starting the application
+2020-11-15 12:35:19,356  * Debugger is active!
+2020-11-15 12:35:19,375  * Debugger PIN: 322-571-730
+2020-11-15 12:35:52,193 127.0.0.1 - - [15/Nov/2020 12:35:52] "GET /login HTTP/1.1" 200 -
+2020-11-15 12:35:58,288 Admin login successful!!!
+2020-11-15 12:35:58,294 127.0.0.1 - - [15/Nov/2020 12:35:58] "POST /login HTTP/1.1" 302 -
+2020-11-15 12:35:58,312 127.0.0.1 - - [15/Nov/2020 12:35:58] "GET /admin HTTP/1.1" 200 -
+2020-11-15 12:54:07,517 Starting the application
+2020-11-15 12:54:07,548  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-11-15 12:54:07,550  * Restarting with stat
+2020-11-15 12:54:07,958 Starting the application
+2020-11-15 12:54:07,965  * Debugger is active!
+2020-11-15 12:54:07,975  * Debugger PIN: 322-571-730
+2020-11-15 12:54:14,777 127.0.0.1 - - [15/Nov/2020 12:54:14] "GET /login HTTP/1.1" 200 -
+2020-11-15 12:54:23,938 127.0.0.1 - - [15/Nov/2020 12:54:23] "POST /login HTTP/1.1" 302 -
+2020-11-15 12:54:23,955 127.0.0.1 - - [15/Nov/2020 12:54:23] "GET / HTTP/1.1" 200 -
+2020-11-15 12:54:27,026 127.0.0.1 - - [15/Nov/2020 12:54:27] "POST / HTTP/1.1" 302 -
+2020-11-15 12:54:27,041 127.0.0.1 - - [15/Nov/2020 12:54:27] "GET /payment HTTP/1.1" 200 -
+2020-11-15 12:54:29,569 127.0.0.1 - - [15/Nov/2020 12:54:29] "GET / HTTP/1.1" 200 -
+2020-11-15 12:54:31,107 127.0.0.1 - - [15/Nov/2020 12:54:31] "POST / HTTP/1.1" 302 -
+2020-11-15 12:54:31,117 127.0.0.1 - - [15/Nov/2020 12:54:31] "GET /payment HTTP/1.1" 200 -
+2020-11-15 12:54:32,416 127.0.0.1 - - [15/Nov/2020 12:54:32] "GET / HTTP/1.1" 200 -
+2020-11-15 12:54:33,733 127.0.0.1 - - [15/Nov/2020 12:54:33] "POST / HTTP/1.1" 302 -
+2020-11-15 12:54:33,745 127.0.0.1 - - [15/Nov/2020 12:54:33] "GET /payment HTTP/1.1" 200 -
+2020-11-15 12:59:03,087  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 12:59:03,136  * Restarting with stat
+2020-11-15 12:59:04,563 Starting the application
+2020-11-15 12:59:04,591  * Debugger is active!
+2020-11-15 12:59:04,601  * Debugger PIN: 322-571-730
+2020-11-15 12:59:08,665  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 12:59:08,703  * Restarting with stat
+2020-11-15 12:59:09,114 Starting the application
+2020-11-15 12:59:09,122  * Debugger is active!
+2020-11-15 12:59:09,129  * Debugger PIN: 322-571-730
+2020-11-15 12:59:12,180  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 12:59:12,221  * Restarting with stat
+2020-11-15 12:59:12,547 Starting the application
+2020-11-15 12:59:12,555  * Debugger is active!
+2020-11-15 12:59:12,562  * Debugger PIN: 322-571-730
+2020-11-15 12:59:43,061 127.0.0.1 - - [15/Nov/2020 12:59:43] "GET / HTTP/1.1" 200 -
+2020-11-15 12:59:44,580 127.0.0.1 - - [15/Nov/2020 12:59:44] "POST / HTTP/1.1" 200 -
+2020-11-15 12:59:46,328 127.0.0.1 - - [15/Nov/2020 12:59:46] "GET / HTTP/1.1" 200 -
+2020-11-15 13:00:04,407  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:00:04,444  * Restarting with stat
+2020-11-15 13:00:05,726 Starting the application
+2020-11-15 13:00:05,750  * Debugger is active!
+2020-11-15 13:00:05,764  * Debugger PIN: 322-571-730
+2020-11-15 13:00:09,835  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:00:09,877  * Restarting with stat
+2020-11-15 13:00:10,269 Starting the application
+2020-11-15 13:00:10,277  * Debugger is active!
+2020-11-15 13:00:10,284  * Debugger PIN: 322-571-730
+2020-11-15 13:00:12,313  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:00:12,371  * Restarting with stat
+2020-11-15 13:00:13,453 Starting the application
+2020-11-15 13:00:13,488  * Debugger is active!
+2020-11-15 13:00:13,516  * Debugger PIN: 322-571-730
+2020-11-15 13:00:14,535  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:00:14,576  * Restarting with stat
+2020-11-15 13:00:14,898 Starting the application
+2020-11-15 13:00:14,905  * Debugger is active!
+2020-11-15 13:00:14,912  * Debugger PIN: 322-571-730
+2020-11-15 13:00:25,643 127.0.0.1 - - [15/Nov/2020 13:00:25] "POST / HTTP/1.1" 200 -
+2020-11-15 13:00:28,211 127.0.0.1 - - [15/Nov/2020 13:00:28] "GET / HTTP/1.1" 200 -
+2020-11-15 13:00:29,561 127.0.0.1 - - [15/Nov/2020 13:00:29] "POST / HTTP/1.1" 200 -
+2020-11-15 13:00:44,129 127.0.0.1 - - [15/Nov/2020 13:00:44] "GET / HTTP/1.1" 200 -
+2020-11-15 13:00:45,525 127.0.0.1 - - [15/Nov/2020 13:00:45] "POST / HTTP/1.1" 200 -
+2020-11-15 13:00:55,744 127.0.0.1 - - [15/Nov/2020 13:00:55] "GET /post?navigation=3&usability=2 HTTP/1.1" 404 -
+2020-11-15 13:01:53,609  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:01:53,654  * Restarting with stat
+2020-11-15 13:01:55,046 Starting the application
+2020-11-15 13:01:55,073  * Debugger is active!
+2020-11-15 13:01:55,092  * Debugger PIN: 322-571-730
+2020-11-15 13:01:58,146  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:01:58,184  * Restarting with stat
+2020-11-15 13:01:58,503 Starting the application
+2020-11-15 13:01:58,510  * Debugger is active!
+2020-11-15 13:01:58,517  * Debugger PIN: 322-571-730
+2020-11-15 13:01:59,533  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:01:59,576  * Restarting with stat
+2020-11-15 13:02:00,201 Starting the application
+2020-11-15 13:02:00,215  * Debugger is active!
+2020-11-15 13:02:00,222  * Debugger PIN: 322-571-730
+2020-11-15 13:02:01,241  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:02:01,280  * Restarting with stat
+2020-11-15 13:02:01,615 Starting the application
+2020-11-15 13:02:01,623  * Debugger is active!
+2020-11-15 13:02:01,630  * Debugger PIN: 322-571-730
+2020-11-15 13:02:20,990  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:02:21,038  * Restarting with stat
+2020-11-15 13:02:22,321 Starting the application
+2020-11-15 13:02:22,345  * Debugger is active!
+2020-11-15 13:02:22,356  * Debugger PIN: 322-571-730
+2020-11-15 13:06:27,391 127.0.0.1 - - [15/Nov/2020 13:06:27] "GET / HTTP/1.1" 200 -
+2020-11-15 13:06:29,320 127.0.0.1 - - [15/Nov/2020 13:06:29] "POST / HTTP/1.1" 200 -
+2020-11-15 13:06:31,013 127.0.0.1 - - [15/Nov/2020 13:06:31] "GET / HTTP/1.1" 200 -
+2020-11-15 13:06:32,158 127.0.0.1 - - [15/Nov/2020 13:06:32] "POST / HTTP/1.1" 200 -
+2020-11-15 13:07:25,574  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:07:25,618  * Restarting with stat
+2020-11-15 13:07:27,094 Starting the application
+2020-11-15 13:07:27,125  * Debugger is active!
+2020-11-15 13:07:27,142  * Debugger PIN: 322-571-730
+2020-11-15 13:07:43,416  * Detected change in '/Users/saieshwar/Downloads/cg/vsCode/Cube/app.py', reloading
+2020-11-15 13:07:43,477  * Restarting with stat
+2020-11-15 13:12:19,670 Starting the application
+2020-11-15 13:12:19,680  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2020-11-15 13:12:19,682  * Restarting with stat
+2020-11-15 13:12:20,077 Starting the application
+2020-11-15 13:12:20,084  * Debugger is active!
+2020-11-15 13:12:20,090  * Debugger PIN: 322-571-730
+2020-11-15 13:12:26,433 127.0.0.1 - - [15/Nov/2020 13:12:26] "GET /login HTTP/1.1" 200 -
+2020-11-15 13:12:32,737 127.0.0.1 - - [15/Nov/2020 13:12:32] "POST /login HTTP/1.1" 302 -
+2020-11-15 13:12:32,756 127.0.0.1 - - [15/Nov/2020 13:12:32] "GET / HTTP/1.1" 200 -
+2020-11-15 13:12:37,024 127.0.0.1 - - [15/Nov/2020 13:12:37] "POST / HTTP/1.1" 302 -
+2020-11-15 13:12:37,038 127.0.0.1 - - [15/Nov/2020 13:12:37] "GET /feedback HTTP/1.1" 200 -
+2020-11-15 13:12:42,212 127.0.0.1 - - [15/Nov/2020 13:12:42] "GET /post?navigation=1&usability=3 HTTP/1.1" 404 -
+2020-11-15 13:14:28,636 127.0.0.1 - - [15/Nov/2020 13:14:28] "GET /post?navigation=1&usability=3 HTTP/1.1" 404 -
+2020-11-15 13:14:36,679 127.0.0.1 - - [15/Nov/2020 13:14:36] "GET / HTTP/1.1" 200 -
+2020-11-15 13:14:37,934 127.0.0.1 - - [15/Nov/2020 13:14:37] "POST / HTTP/1.1" 302 -
+2020-11-15 13:14:37,984 127.0.0.1 - - [15/Nov/2020 13:14:37] "GET /feedback HTTP/1.1" 200 -
+2020-11-15 13:14:41,782 127.0.0.1 - - [15/Nov/2020 13:14:41] "POST /feedback HTTP/1.1" 302 -
+2020-11-15 13:14:41,804 127.0.0.1 - - [15/Nov/2020 13:14:41] "GET / HTTP/1.1" 200 -
