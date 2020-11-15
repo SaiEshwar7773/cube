@@ -23,13 +23,17 @@ ins_statment="INSERT INTO events (user_id,ts,noun,verb,location,timespent,proper
 #conn.commit()
 cur = conn.cursor()
 
-
-sel=cur.execute("Select ts, properties from events where user_id=1  and  noun='bill' and verb=='pay'")
-sel=cur.execute("select * from events")
-sel_data = cur.fetchall(); 
+cur.execute("Select ts, properties from events where user_id=1  and  noun='bill' and verb=='pay'")
+sel_data = cur.fetchall()
 print(len(sel_data))
 for s in sel_data:
-    print(s)
+    try:
+        value=(s[1])
+        value=value.replace("\'","\"")
+        value=json.loads(value)
+        print(value['Value'])
+    except Exception as e:
+        print(e)
 conn.close()
 
 

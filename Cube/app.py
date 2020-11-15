@@ -12,8 +12,8 @@ def rule2(user_id):
     try:
         conn = sqlite3.connect('database.db')
         cur = conn.cursor()
-        sel=cur.execute("Select ts, properties from events where user_id={}  and  noun='bill' and verb=='pay'".format(user_id))
-        sel_data = cur.fetchall(); 
+        cur.execute("Select ts, properties from events where user_id={}  and  noun='bill' and verb=='pay'".format(user_id))
+        sel_data = cur.fetchall()
         conn.close()
         now=datetime.now()
         ts = datetime.timestamp(now)
@@ -40,8 +40,8 @@ def rule1(user_id):
     try:
         conn = sqlite3.connect('database.db')
         cur = conn.cursor()
-        sel=cur.execute("Select * from events where user_id={}  and  noun='bill' and verb=='pay'".format(user_id))
-        sel_data = cur.fetchall(); 
+        cur.execute("Select * from events where user_id={}  and  noun='bill' and verb=='pay'".format(user_id))
+        sel_data = cur.fetchall()
         if len(sel_data)==1:
             logger.info("Notification") 
         else:
@@ -103,7 +103,7 @@ def payment():
                 ins_statment='INSERT INTO events (user_id,ts,noun,verb,location,timespent,properties) VALUES ({},"{}","{}","{}","{}",{},"{}")'.format(user_id,ts,noun,verb,location,timespent,properties)
                 logger.info("payment event "+ins_statment) 
                 conn = sqlite3.connect('database.db')
-                ins=conn.execute(ins_statment)
+                conn.execute(ins_statment)
                 conn.commit()
                 conn.close()
                 rule1(session['user_id'])
@@ -135,7 +135,7 @@ def feedback():
                 ins_statment='INSERT INTO events (user_id,ts,noun,verb,location,timespent,properties) VALUES ({},"{}","{}","{}","{}",{},"{}")'.format(user_id,ts,noun,verb,location,timespent,properties)
                 logger.info("feedback event "+ins_statment) 
                 conn = sqlite3.connect('database.db')
-                ins=conn.execute(ins_statment)
+                conn.execute(ins_statment)
                 conn.commit()
                 conn.close()
                 return redirect(url_for('events'))
